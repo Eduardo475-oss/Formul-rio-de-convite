@@ -1,0 +1,28 @@
+aside {
+    padding: 2rem;
+
+    & .aside-container {
+        max-width: 21rem;
+        margin: 2rem;
+        color: white;
+    }
+
+    h1 {
+        color: var(--pink);
+        font: var(--logo);
+        margin-top: 1rem;
+    }
+
+    p {
+        font: var(--body-md);
+        color: var(--text-body);
+        margin-top: 0.25rem;
+    }
+}
+
+
+.logo-img {
+    max-width: 100%;
+    width: 2.865rem;
+    height: 3rem;
+}

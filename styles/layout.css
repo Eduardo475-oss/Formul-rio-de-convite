@@ -6,16 +6,6 @@
     overflow: hidden;
 }
 
-aside {
-    padding: 2rem;
-
-    & .aside-container {
-        max-width: 21rem;
-        margin: 2rem;
-        color: white;
-    }
-}
-
 main {
     overflow: auto;
     padding: 5rem;
@@ -36,3 +26,4 @@ main {
     background-position: center;
     background-repeat: no-repeat;
 }
+
