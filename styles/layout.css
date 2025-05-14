@@ -6,19 +6,6 @@
     overflow: hidden;
 }
 
-main {
-    overflow: auto;
-    padding: 5rem;
-
-    background-color: var(--shape-background);
-    
-    & .main-container {
-        max-width: 35rem;
-        margin: 8.125rem;
-        color: white;
-    }
-}
-
 .bg-img {
     background-image: url(../assets/Background.png);
     max-width: 100%;

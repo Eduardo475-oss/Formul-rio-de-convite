@@ -31,9 +31,57 @@
 
         <main>
             <div class="main-container">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, magni quis. Dignissimos voluptatum quo fugit nihil, harum eum adipisci sint, iste possimus totam eaque 
-                dolor cupiditate velit aperiam molestiae vel.
-                <h2>asdadadsadasda</h2>
+                <h1>Crie seu convite</h1>
+                <form>
+                    <fieldset class="about-event">
+                        <img src="assets/icons/calendar.svg" alt="">
+                        <legend>Sobre o Evento</legend>
+
+                        <div class="input-wrapper">
+                            <label for="title">Título</label>
+                            <input type="text" id="title" 
+                            placeholder="Nome do evento">    
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="initial">Início</label>
+                            <input type="date" id="initial" lang="pt-br">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="end">Fim</label>
+                            <input type="date" id="end">
+                        </div>
+
+                        <div class="radio-wrapper">
+                            <label for="type">Tipo</label>
+                            <div class="radio-inner">
+                                <input type="radio" name="type" 
+                                value="in-person" id="in-person">
+                                <label for="in-person">Presencial</label>
+                            </div>
+
+                            <div class="radio-inner">
+                                <input type="radio" name="type" 
+                                value="online" id="online">
+                                <label for="online">Online</label>
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="location">Local</label>
+                            <input type="text" id="location"
+                            placeholder="Link ou endereço">
+                        </div>
+
+                        <div class="text-wrapper">
+                            <label for="description">Descrição</label>
+                            <textarea 
+                            name="descrição" 
+                            placeholder="Escreva sobre os detalhes do evento"></textarea>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </main>
     </div>
