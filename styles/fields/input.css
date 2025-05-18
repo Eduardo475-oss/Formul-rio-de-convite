@@ -1,0 +1,27 @@
+input, textarea {
+    appearance: none;
+    width: 100%;
+    border-radius: .2rem;
+    border: 1px solid var(--input-stroke);
+
+    padding: .40rem 1rem;
+
+    font: var(--body-md);
+
+    color: var(--input-placeholder);
+
+    background-color: var(--input-base);
+}
+
+input:focus,
+textarea:focus {
+    outline: .2rem solid var(--brand-light);
+}
+
+input[type="date"] {
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+
+    text-transform: uppercase;
+}

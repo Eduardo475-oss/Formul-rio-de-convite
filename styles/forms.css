@@ -1,0 +1,47 @@
+@import url(fields/index.css);
+
+.about-event {
+    border: none;
+    margin-top: 2.5rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.input-wrapper {
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.radio-wrapper {
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.text-wrapper {
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 1rem;
+
+    textarea {
+        width: 35rem;
+        height: 8.5rem;
+    }
+}
+
+.about-event label {
+    font: var(--body-sm);
+    color: var(--text-body);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
