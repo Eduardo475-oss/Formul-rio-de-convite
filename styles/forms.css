@@ -45,3 +45,15 @@
     gap: 1rem;
 }
 
+.customization {
+    border: none;
+    margin-top: 3rem;
+    
+    & .input-color {
+        margin-top: 1.5rem;
+    }
+
+    & .color {
+        margin-top: 1rem;
+    }
+}

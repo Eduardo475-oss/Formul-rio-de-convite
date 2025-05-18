@@ -1,5 +1,4 @@
 input, textarea {
-    appearance: none;
     width: 100%;
     border-radius: .2rem;
     border: 1px solid var(--input-stroke);
@@ -24,4 +23,17 @@ input[type="date"] {
     }
 
     text-transform: uppercase;
+}
+
+input[type="color"] {
+    border: none;
+    background-color: var(--shape-button);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    padding: 0;
+
+    &::-webkit-color-swatch {
+        border-radius: 50%;
+    }
 }
