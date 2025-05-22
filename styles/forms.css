@@ -1,4 +1,6 @@
 @import url(fields/index.css);
+@import url(fields/droparea.css);
+@import url(fields/switch.css);
 
 .about-event {
     border: none;
@@ -9,6 +11,12 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
+}
+
+.flex-2 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .input-wrapper {
@@ -56,4 +64,15 @@
     & .color {
         margin-top: 1rem;
     }
+
+    & .input-wrapper {
+        margin-top: 2rem;
+    }
+
+    & label {
+        font: var(--body-sm);
+        color: var(--text-body);
+        margin-top: .1rem;
+    }
+
 }
