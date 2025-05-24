@@ -1,0 +1,19 @@
+button {
+    all: unset;
+    font-weight: 500;
+    color: var(--text-heading);
+    border-radius: .5rem;
+    cursor: pointer;
+    width: 11rem;
+    height: 3rem;
+
+    background-color: var(--brand-dark);
+
+  
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

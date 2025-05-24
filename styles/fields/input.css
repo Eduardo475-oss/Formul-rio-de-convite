@@ -7,9 +7,29 @@ input, textarea {
 
     font: var(--body-md);
 
-    color: var(--input-placeholder);
+    color: var(--text-heading);
 
     background-color: var(--input-base);
+
+    &:invalid {
+        border: 0.125rem solid var(--danger);
+    }
+
+    &[required] + .error {
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+
+        margin-top: .5rem;
+
+        font: var(--body-sm);
+        color: var(--danger);
+
+    }
+
+    &:not(:focus):valid + .error {
+        display: none;
+    }
 }
 
 input:focus,
@@ -37,3 +57,4 @@ input[type="color"] {
         border-radius: 50%;
     }
 }
+

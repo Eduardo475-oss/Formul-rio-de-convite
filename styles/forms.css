@@ -1,6 +1,7 @@
 @import url(fields/index.css);
 @import url(fields/droparea.css);
 @import url(fields/switch.css);
+@import url(fields/button.css);
 
 .about-event {
     border: none;
@@ -17,6 +18,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 .input-wrapper {
@@ -39,6 +41,45 @@
     textarea {
         width: 35rem;
         height: 8.5rem;
+    }
+}
+
+.mail-wrapper {
+    & input {
+        margin-top: 1rem;
+    }
+}
+
+.phone-wrapper {
+    & input {
+        margin-top: 1rem;
+    }
+}
+
+.privacy-wrapper {
+    border: none;
+}
+
+.check-wrapper {
+    display: flex;
+    margin-top: 0.5rem;
+    gap: 0.75rem;
+
+    & input {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    & p {
+        font: var(--body-xs);
+        color: var(--text-body);
+        justify-self: left;
+        align-items: center;
+        text-align: stretch;
+    }
+
+    & a {
+        color: var(--brand-light);
     }
 }
 
@@ -73,6 +114,43 @@
         font: var(--body-sm);
         color: var(--text-body);
         margin-top: .1rem;
+    }
+
+}
+
+.contact-details {
+    margin-top: 3rem;
+    border: none;
+
+    & label{
+        font: var(--body-sm);
+        color: var(--text-body);
+    }
+}
+
+.privacy-policy {
+    border: none;
+}
+
+.actions-wrapper {
+    margin-top: 3rem;
+    justify-self: end;
+    
+
+    padding: 0rem;
+
+    position: relative;
+    & .btn-img {
+        background-image: url(../assets/icons/ticket.svg);
+        position: absolute;
+        
+        margin-left: 0.5rem;
+        margin-top: 0.85rem;
+
+        left: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+        
     }
 
 }

@@ -80,3 +80,42 @@
         }
     }
 }
+
+
+.check-wrapper {
+    display: flex;
+    
+    
+
+    position: relative;
+    & input,
+    & input:focus,
+    & input:hover {
+        all: unset;
+        position: absolute;
+        inset: 0;
+    }
+
+
+
+    .check-image {
+        background-image: url(../../assets/icons/check-1-hover.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+
+        left: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    
+    &:has(:checked) {
+        
+            & .check-image {
+                background-image: url(../../assets/icons/check-hover.svg);
+            }
+    }
+
+    & p {
+        margin-left: 2rem;
+    }
+}
